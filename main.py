@@ -149,6 +149,10 @@ while True:
                 bird_movement = 0
                 score = 0
 
+            if event.key == pygame.K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+
         if event.type == SPAWNPIPE:
             pipe_list.extend(create_pipe())
 
